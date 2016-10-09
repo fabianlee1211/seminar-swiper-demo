@@ -55,7 +55,17 @@
             var swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: false,
-                direction: 'vertical'
+                direction: 'vertical',
+                touchEventsTarget = null,
+                resistanceRatio: 0,
+                effect: 'coverflow',
+                coverflow: {
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 5,
+                  slideShadows : false
+                }
 //                paginationCustomRender: function (swiper, current, total) {
 //                    return current + ' of ' + total;
 //                }
