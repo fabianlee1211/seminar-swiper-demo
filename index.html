@@ -83,6 +83,7 @@
         
         <!-- Initialize Swiper -->
         <script>
+            document.addEventListener("touchstart", function(){}, true);
             var swiper = new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: false,
@@ -96,9 +97,6 @@
                   modifier: 2,
                   slideShadows : false
                 }
-//                paginationCustomRender: function (swiper, current, total) {
-//                    return current + ' of ' + total;
-//                }
             });
         </script>
     </body>
