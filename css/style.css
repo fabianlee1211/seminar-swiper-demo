@@ -16,7 +16,7 @@ html, body {
 
     .line { border: 2px solid white; width: 30%; margin: 10px 0 }
 
-    h1, h3 { letter-spacing: 1.1 }
+    h1 { letter-spacing: 1.1 }
 
     a { text-decoration: none; }
 
@@ -37,21 +37,43 @@ html, body {
         padding: 20px;
     }
 
+
 /*Title Slide*/
 .title { background: url(../img/title-bg.jpg) no-repeat 60%; background-size: cover;  padding: 30px}
 .title h1 { font-weight: 700; font-size: 40px; color: white; margin-bottom: 5px }
 .title h3 { font-weight: 200; font-size: 25px; color: white; margin-bottom: 5px }
 
-#details { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 5px }
+#details { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 5px;  flex-direction: column; flex: }
 #details img { width: 24px; margin-right: 5px; }
-#details p { font-size: 20px; color: white;  line-height: 1.5 }
-#date, #time, #venue { display: flex; align-items: center; margin-right: 15px }
+#details p { font-size: 18px; color: white;  line-height: 1.8 }
+#date, #time, #venue { display: flex; align-items: center; margin-right: 15px; justify-content: center; }
+
 
 /*Intro Slide*/
 .intro h1 { font-weight: 200; }
-.intro p { padding: 10px; line-height: 1.6; font-size: 18px; font-weight: 200 }
+.intro p { padding: 10px; line-height: 1.6; font-size: 20px; font-weight: 200 }
 .content { padding: 10px }
-.content p:nth-child(2) { font-weight: 600 }
-#link { text-align: center;  margin-top: 20px }
+.content p span { font-weight: 600 }
+#link { text-align: center;  margin-top: 10px }
 #link a { padding: 10px; border-radius: 5px; border: 3px solid #3CD3AD; color: #3CD3AD; display: block; width: 150px; margin: 0 auto; transition: all 0.1s ease-in-out }
 #link a:hover { color: white; background: #3CD3AD; }
+
+
+/*First Half*/
+.first-half { position: relative; background: linear-gradient(-40deg,#4CB8C4,#3CD3AD); }
+.first-half:after, .intro:after { 
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pgo8cGF0aCBkPSJNMjggNjZMMCA1MEwwIDE2TDI4IDBMNTYgMTZMNTYgNTBMMjggNjZMMjggMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8cGF0aCBkPSJNMjggMEwyOCAzNEwwIDUwTDAgODRMMjggMTAwTDU2IDg0TDU2IDUwTDI4IDM0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8L3N2Zz4="); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+    content: ""; 
+    z-index: -1;
+    opacity: 0.5
+}
+.first-half h1 { font-weight: 200; color: white }
+.schedule-item { text-align: left; padding: 10px; border-top: 2px solid white  }
+.schedule-item > * { color: white }
+.break { background: rgba(255, 0, 89, 0.19) }
+.talk-title { margin: 5px 0}
