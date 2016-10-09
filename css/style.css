@@ -34,7 +34,7 @@ html, body {
         -webkit-align-items: center;
         align-items: center;
         padding: 20px;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
     }
 
 
@@ -51,7 +51,7 @@ html, body {
 
 /*Intro Slide*/
 .intro h1 { font-weight: 200; }
-.intro p { padding: 10px; line-height: 1.6; font-size: 20px; font-weight: 200 }
+.intro p { padding: 10px; line-height: 1.6; font-size: 18px; font-weight: 200 }
 .content { padding: 10px }
 .content p span { font-weight: 600 }
 #link { text-align: center;  margin-top: 10px }
@@ -60,8 +60,8 @@ html, body {
 
 
 /*First Half*/
-.first-half { position: relative; background: linear-gradient(-40deg,#4CB8C4,#3CD3AD); }
-.first-half:after, .intro:after { 
+.first-half, .second-half, .third-half { position: relative; background: linear-gradient(-40deg,#4CB8C4,#3CD3AD); }
+.first-half:after, .intro:after, .second-half:after, .third-half:after, .contact:after { 
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pgo8cGF0aCBkPSJNMjggNjZMMCA1MEwwIDE2TDI4IDBMNTYgMTZMNTYgNTBMMjggNjZMMjggMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8cGF0aCBkPSJNMjggMEwyOCAzNEwwIDUwTDAgODRMMjggMTAwTDU2IDg0TDU2IDUwTDI4IDM0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8L3N2Zz4="); 
     position: absolute; 
     top: 0; 
@@ -72,8 +72,13 @@ html, body {
     z-index: -1;
     opacity: 0.5
 }
-.first-half h1 { font-weight: 200; color: white }
-.schedule-item { text-align: left; padding: 10px; border-top: 2px solid white  }
+.first-half h1, .second-half h1, .third-half h1 { font-weight: 200; color: white }
+.schedule-item { text-align: left; padding: 15px; border-top: 2px solid white }
+.schedule-item:nth-child(3) { border-bottom: 2px solid white }
 .schedule-item > * { color: white }
-.break { background: rgba(255, 0, 89, 0.19) }
-.talk-title { margin: 5px 0}
+.break { background: rgba(255, 0, 89, 0.2) }
+.talk-title { margin: 5px 0; }
+.speaker, .speaker-title { font-weight: 400 }
+.next { color: white; text-align: right; margin-top: 5px; font-style: italic }
+
+.third-half .schedule-item:nth-child(2) { border-bottom: 2px solid white }
