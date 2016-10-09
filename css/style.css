@@ -7,7 +7,6 @@ html, body {
     body {
         background: #eee;
         font-family: 'Lato', sans-serif;
-        color:#000;
         max-width: 768px;
         min-width: 320px;
     }
@@ -35,6 +34,7 @@ html, body {
         -webkit-align-items: center;
         align-items: center;
         padding: 20px;
+        -webkit-tap-highlight-color: transparent;
     }
 
 
