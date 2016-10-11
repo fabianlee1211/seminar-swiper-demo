@@ -1,9 +1,7 @@
 * { padding: 0; margin: 0; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
-html, body {
-        position: relative;
-        height: 100%;
-    }
+html, body { position: relative; height: 100%; }
+
     body {
         background: #eee;
         font-family: 'Lato', sans-serif;
@@ -19,10 +17,7 @@ html, body {
 
     a { text-decoration: none; }
 
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
+    .swiper-container { width: 100%; height: 100%; }
     .swiper-slide {
         text-align: center;
         background: #fff;
@@ -43,7 +38,7 @@ html, body {
 .title h1 { font-weight: 700; font-size: 40px; color: white; margin-bottom: 5px }
 .title h3 { font-weight: 200; font-size: 25px; color: white; margin-bottom: 5px }
 
-#details { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 5px;  flex-direction: column; flex: }
+#details { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 5px;  flex-direction: column; }
 #details img { width: 24px; margin-right: 5px; }
 #details p { font-size: 18px; color: white;  line-height: 1.8 }
 #date, #time, #venue { display: flex; align-items: center; margin-right: 15px; justify-content: center; }
@@ -59,9 +54,9 @@ html, body {
 #link a:hover { color: white; background: #3CD3AD; }
 
 
-/*First Half*/
+/*Schedule*/
 .first-half, .second-half, .third-half { position: relative; background: linear-gradient(-40deg,#4CB8C4,#3CD3AD); }
-.first-half:after, .intro:after, .second-half:after, .third-half:after, .contact:after { 
+.first-half:after, .intro:after, .second-half:after, .third-half:after, .sup-org:after { 
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pgo8cGF0aCBkPSJNMjggNjZMMCA1MEwwIDE2TDI4IDBMNTYgMTZMNTYgNTBMMjggNjZMMjggMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8cGF0aCBkPSJNMjggMEwyOCAzNEwwIDUwTDAgODRMMjggMTAwTDU2IDg0TDU2IDUwTDI4IDM0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC4wNSI+PC9wYXRoPgo8L3N2Zz4="); 
     position: absolute; 
     top: 0; 
@@ -83,5 +78,10 @@ html, body {
 
 .third-half .schedule-item:nth-child(2) { border-bottom: 2px solid white }
 
-.logo-lockup { display: flex; flex-wrap: wrap; justify-content: center; }
-.logo { width: 50%; padding: 0 10px; }
+/*Supporting Org*/
+.sup-org h1 { font-weight: 200; }
+.logo-lockup { display: flex; flex-wrap: wrap; align-items: center; justify-content: center }
+.logo { width: 50%; }
+.logo img { width: 100%; vertical-align: middle; }
+.logo a { display: block; }
+
