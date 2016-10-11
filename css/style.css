@@ -82,3 +82,6 @@ html, body {
 .next { color: white; text-align: right; margin-top: 5px; font-style: italic }
 
 .third-half .schedule-item:nth-child(2) { border-bottom: 2px solid white }
+
+.logo-lockup { display: flex; flex-wrap: wrap; justify-content: center; }
+.logo { width: 50%; padding: 0 10px; }
