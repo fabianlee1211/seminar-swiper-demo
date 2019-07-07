@@ -3,10 +3,9 @@
 html, body { position: relative; height: 100%; }
 
     body {
-        background: #eee;
+        background: #333;
         font-family: 'Lato', sans-serif;
-        max-width: 768px;
-        min-width: 320px;
+        width: 100%;
     }
     
     img { display: block; }
@@ -17,7 +16,7 @@ html, body { position: relative; height: 100%; }
 
     a { text-decoration: none; }
 
-    .swiper-container { width: 100%; height: 100%; }
+    .swiper-container { max-width: 768px; min-width: 375px; height: 100%; }
     .swiper-slide {
         text-align: center;
         background: #fff;
